@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-width: fit-content;
+  font-family: 'poppins', sans-serif;
+  background-color: #f3ebe2;
+}
+
+/* Navigation Bar */
+nav#Navigation{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px 2%;
+}
+
+/* Navigation Logo */
+#Navigation img{
+  width: 100px;
+  height: 50px;
+}
+
+/* Navigation Unordered List(Home, Projects, About) */
+#Navigation ul{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  margin-top: 15px;
+  
+}
+/* Navigation list styles */
+
+#Navigation li a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  padding-block: 3px;
+}
+/* Navigation hover effect */
+#Navigation li a::before{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 0%;
+  background:#fb3640;
+  border-radius: 12px;
+  transition: all 300ms ease-in-out;
+}
+
+#Navigation li a:hover:before{
+  width: 100%;
+}
+
+@media only screen and (max-width:630px) {
+
+}
+
+
